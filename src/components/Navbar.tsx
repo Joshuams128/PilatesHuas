@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
@@ -12,9 +13,14 @@ export function Navbar() {
       <div className="max-w-[1440px] mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center">
-          <span className="font-['Stolen_Love'] text-2xl font-bold text-[#1A1410]">
-            PILATES HAUS
-          </span>
+          <Image
+            src="/images/logo.png"
+            alt="Pilates Haus Logo"
+            width={60}
+            height={60}
+            className="h-16 w-auto"
+            priority
+          />
         </Link>
 
         {/* Desktop Nav Links */}

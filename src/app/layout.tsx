@@ -6,6 +6,9 @@ import { Footer } from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Pilates Haus Studio",
   description: "Elevated Reformer Pilates in Pickering, Ontario.",
+  icons: {
+    icon: "/images/logo.png",
+  },
 };
 
 export default function RootLayout({

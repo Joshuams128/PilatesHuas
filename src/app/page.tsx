@@ -35,7 +35,12 @@ export default function Home() {
     <div className="w-full">
       {/* Hero Section */}
       <section className="relative h-[600px] md:h-[700px] overflow-hidden">
-        <div className="absolute inset-0 bg-[#CBB9A4]" />
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: "url('/images/marjanphotgraphy1_MAR0020.jpg')"
+          }}
+        />
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30" />
         <div className="relative h-full max-w-[1440px] mx-auto px-6 flex flex-col justify-center">
           <h1 className="font-['Stolen_Love'] text-5xl md:text-7xl text-white mb-6 max-w-3xl">
