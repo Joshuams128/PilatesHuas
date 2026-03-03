@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&display=swap');
+
+/* Stolen Love - Display heading font */
+@font-face {
+  font-family: 'Stolen Love';
+  src: url('https://fonts.cdnfonts.com/s/100819/Stolen%20Love.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Rugrats Sans - Body text font */
+@font-face {
+  font-family: 'Rugrats Sans';
+  src: url('https://fonts.cdnfonts.com/s/107018/Rugrats%20Sans.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --ph-off-white: #F5F2EC;
+  --ph-light-beige: #D9D2C6;
+  --ph-mid-tan: #CBB9A4;
+  --ph-muted-brown: #A48D78;
+  --ph-deep-brown: #82614A;
+  --ph-dark: #1A1410;
+}
+
+@layer base {
+  body {
+    background-color: #F5F2EC;
+    color: #1A1410;
+    font-family: 'Stolen Love', serif;
+  }
+}
