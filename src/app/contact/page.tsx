@@ -40,7 +40,7 @@ function Contact() {
             Get In Touch
           </h1>
           <p className="font-['Stolen_Love'] text-xl md:text-2xl text-white/90 max-w-3xl mx-auto italic">
-            We'd love to hear from you. Reach out with any questions.
+            We&apos;d love to hear from you. Reach out with any questions.
           </p>
         </div>
       </section>
@@ -241,7 +241,7 @@ function Contact() {
             Have Questions?
           </h2>
           <p className="font-['Stolen_Love'] text-xl mb-8 text-[#1A1410] max-w-3xl mx-auto italic">
-            Whether you're new to Pilates or an experienced practitioner, we're here to help. Don't
+            Whether you&apos;re new to Pilates or an experienced practitioner, we&apos;re here to help. Don&apos;t
             hesitate to reach out with any questions about our classes, pricing, or studio policies.
           </p>
         </div>

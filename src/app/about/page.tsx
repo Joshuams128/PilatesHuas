@@ -48,14 +48,14 @@ function About() {
               </h2>
               <p className="font-['Stolen_Love'] text-xl text-[#1A1410] leading-relaxed mb-6 italic">
                 Pilates Haus was founded on the belief that movement should feel empowering,
-                accessible, and intentional. We're not just a studio—we're a community dedicated to
-                helping you discover strength you didn't know you had.
+                accessible, and intentional. We&apos;re not just a studio—we&apos;re a community dedicated to
+                helping you discover strength you didn&apos;t know you had.
               </p>
               <p className="font-['Stolen_Love'] text-[#1A1410] leading-relaxed">
                 Located in the heart of Pickering, Ontario, we offer premium reformer Pilates
                 classes in a warm, welcoming environment. Our expert instructors bring years of
                 experience and a genuine passion for helping you achieve your wellness goals—whether
-                you're brand new to Pilates or a seasoned practitioner.
+                you&apos;re brand new to Pilates or a seasoned practitioner.
               </p>
             </div>
             <div className="rounded-2xl overflow-hidden shadow-2xl">

@@ -100,7 +100,7 @@ function BookNow() {
                 </h3>
                 <p className="font-['Stolen_Love'] text-[#1A1410] leading-relaxed">
                   Arrive 10-15 minutes early to complete your intake form and meet your instructor.
-                  They'll walk you through the reformer and answer any questions.
+                  They&apos;ll walk you through the reformer and answer any questions.
                 </p>
               </div>
               <div>
