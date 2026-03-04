@@ -10,12 +10,38 @@ function Contact() {
     phone: "",
     message: "",
   });
+  const [isLoading, setIsLoading] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    alert("Thank you for your message! We'll get back to you soon.");
-    setFormData({ name: "", email: "", phone: "", message: "" });
+    setIsLoading(true);
+    setSubmitStatus("idle");
+
+    try {
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setSubmitStatus("success");
+        setFormData({ name: "", email: "", phone: "", message: "" });
+        setTimeout(() => setSubmitStatus("idle"), 5000);
+      } else {
+        setSubmitStatus("error");
+        setTimeout(() => setSubmitStatus("idle"), 5000);
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setSubmitStatus("error");
+      setTimeout(() => setSubmitStatus("idle"), 5000);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -124,10 +150,21 @@ function Contact() {
                 </div>
                 <button
                   type="submit"
-                  className="w-full px-8 py-4 bg-[#82614A] text-white font-['Stolen_Love'] rounded-full hover:bg-[#6d5038] transition"
+                  disabled={isLoading}
+                  className="w-full px-8 py-4 bg-[#82614A] text-white font-['Stolen_Love'] rounded-full hover:bg-[#6d5038] transition disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  Send Message
+                  {isLoading ? "Sending..." : "Send Message"}
                 </button>
+                {submitStatus === "success" && (
+                  <div className="p-4 bg-green-100 text-green-800 rounded-lg font-['Stolen_Love']">
+                    Thank you for your message! We'll get back to you soon.
+                  </div>
+                )}
+                {submitStatus === "error" && (
+                  <div className="p-4 bg-red-100 text-red-800 rounded-lg font-['Stolen_Love']">
+                    There was an error sending your message. Please try again.
+                  </div>
+                )}
               </form>
             </div>
 
@@ -224,7 +261,7 @@ function Contact() {
                   height="100%"
                   frameBorder="0"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.3264482736944!2d-79.0877578!3d43.86982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4df8e6b57588b%3A0x5ceebb399cbae37f!2s2460%20Brock%20Rd%20Unit%20C%203rd%20Floor%2C%20Pickering%2C%20ON%20L1X%200J1!5e0!3m2!1sen!2sca!4v1"
-                  allowFullScreen=""
+                  allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   title="Pilates Haus Location"

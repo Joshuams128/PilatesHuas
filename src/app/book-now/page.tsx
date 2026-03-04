@@ -182,6 +182,7 @@ function WellnessLivingWidget() {
 
       {/* Required WellnessLiving attribution link */}
       <div className="flex justify-end px-4 pb-4">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <a
           href="https://www.wellnessliving.com/pilates/software/"
           rel="nofollow noreferrer"
