@@ -7,18 +7,18 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
           {/* Wordmark */}
           <div>
-            <div className="font-['Stolen_Love'] text-2xl font-bold mb-2">
+            <div className="font-heading text-2xl font-bold mb-2">
               PILATES HAUS
             </div>
-            <div className="font-['Stolen_Love'] text-lg">
+            <div className="font-heading text-lg">
               STUDIO
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-['Stolen_Love'] text-lg mb-4">Quick Links</h3>
-            <div className="flex flex-col gap-2 font-['Stolen_Love']">
+            <h3 className="font-heading text-lg mb-4">Quick Links</h3>
+            <div className="flex flex-col gap-2 font-heading">
               <Link href="/" className="hover:text-[#D9D2C6] transition">
                 Home
               </Link>
@@ -39,8 +39,8 @@ export function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="font-['Stolen_Love'] text-lg mb-4">Visit Us</h3>
-            <div className="font-['Stolen_Love'] space-y-2">
+            <h3 className="font-heading text-lg mb-4">Visit Us</h3>
+            <div className="font-heading space-y-2">
               <p>2460 Brock Rd Unit C 303</p>
               <p>Pickering, ON</p>
               <p className="mt-4">
@@ -54,7 +54,7 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-12 pt-6 border-t border-[#A48D78]">
-          <p className="font-['Stolen_Love'] text-sm text-center">
+          <p className="font-heading text-sm text-center">
             © 2025 Pilates Haus Studio. All rights reserved.
           </p>
         </div>

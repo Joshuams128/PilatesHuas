@@ -190,10 +190,10 @@ export default function PricingPage() {
       {/* Page Header */}
       <section className="bg-[#82614A] py-20">
         <div className="max-w-[1440px] mx-auto px-6 text-center">
-          <h1 className="font-['Stolen_Love'] text-5xl md:text-7xl text-white mb-6">
+          <h1 className="font-heading text-5xl md:text-7xl text-white mb-6">
             Simple, Transparent Pricing
           </h1>
-          <p className="font-['Stolen_Love'] text-xl md:text-2xl text-white/90 max-w-3xl mx-auto italic">
+          <p className="font-heading text-xl md:text-2xl text-white/90 max-w-3xl mx-auto italic">
             Choose the option that fits your lifestyle and goals.
           </p>
         </div>
@@ -208,7 +208,7 @@ export default function PricingPage() {
             <div className="inline-flex rounded-full p-1.5 gap-2 bg-[#E8E2D8] shadow-inner">
               <button
                 onClick={() => setActiveTab("promotions")}
-                className={`flex items-center gap-2.5 px-7 py-3 rounded-full font-['Stolen_Love'] transition-all duration-300 ${
+                className={`flex items-center gap-2.5 px-7 py-3 rounded-full font-heading transition-all duration-300 ${
                   activeTab === "promotions"
                     ? "text-white shadow-md"
                     : "text-[#6b6b6b] hover:text-[#1A1410]"
@@ -220,7 +220,7 @@ export default function PricingPage() {
               </button>
               <button
                 onClick={() => setActiveTab("packages")}
-                className={`flex items-center gap-2.5 px-7 py-3 rounded-full font-['Stolen_Love'] transition-all duration-300 ${
+                className={`flex items-center gap-2.5 px-7 py-3 rounded-full font-heading transition-all duration-300 ${
                   activeTab === "packages"
                     ? "text-white shadow-md"
                     : "text-[#6b6b6b] hover:text-[#1A1410]"
@@ -232,7 +232,7 @@ export default function PricingPage() {
               </button>
               <button
                 onClick={() => setActiveTab("classPacks")}
-                className={`flex items-center gap-2.5 px-7 py-3 rounded-full font-['Stolen_Love'] transition-all duration-300 ${
+                className={`flex items-center gap-2.5 px-7 py-3 rounded-full font-heading transition-all duration-300 ${
                   activeTab === "classPacks"
                     ? "text-white shadow-md"
                     : "text-[#6b6b6b] hover:text-[#1A1410]"
@@ -249,13 +249,13 @@ export default function PricingPage() {
           {activeTab === "promotions" && (
             <div>
               <div className="text-center mb-10">
-                <div className="inline-block px-4 py-1 rounded-full mb-4 font-['Stolen_Love'] text-white text-sm bg-[#A48D78]">
+                <div className="inline-block px-4 py-1 rounded-full mb-4 font-heading text-white text-sm bg-[#A48D78]">
                   Current Promotions
                 </div>
-                <h2 className="font-['Stolen_Love'] text-4xl md:text-5xl text-[#1A1410] mb-3">
+                <h2 className="font-heading text-4xl md:text-5xl text-[#1A1410] mb-3">
                   Limited-Time Offers
                 </h2>
-                <p className="font-['Stolen_Love'] text-lg text-[#A48D78] italic max-w-xl mx-auto">
+                <p className="font-heading text-lg text-[#A48D78] italic max-w-xl mx-auto">
                   Exclusive deals for new clients and the month of March.
                 </p>
               </div>
@@ -269,15 +269,15 @@ export default function PricingPage() {
                     <div className="px-5 py-4 bg-[#82614A]">
                       <div className="flex items-start justify-between gap-2">
                         <div>
-                          <p className="font-['Stolen_Love'] text-lg leading-tight text-white">
+                          <p className="font-heading text-lg leading-tight text-white">
                             {promo.name}
                           </p>
-                          <p className="font-['Stolen_Love'] text-base font-semibold mt-1 text-white">
+                          <p className="font-heading text-base font-semibold mt-1 text-white">
                             {promo.duration}
                           </p>
                         </div>
                         {promo.badge && (
-                          <span className="shrink-0 bg-white/20 text-white font-['Stolen_Love'] text-xs px-3 py-1 rounded-full whitespace-nowrap font-semibold">
+                          <span className="shrink-0 bg-white/20 text-white font-heading text-xs px-3 py-1 rounded-full whitespace-nowrap font-semibold">
                             {promo.badge}
                           </span>
                         )}
@@ -287,10 +287,10 @@ export default function PricingPage() {
                     <div className="px-5 py-5 flex flex-col flex-1">
                       {promo.classes !== null && (
                         <div className="mb-4 pb-4 border-b border-[#EDE7DF]">
-                          <span className="font-['Stolen_Love'] text-4xl text-[#82614A]">
+                          <span className="font-heading text-4xl text-[#82614A]">
                             {promo.classes}
                           </span>
-                          <p className="font-['Stolen_Love'] text-xs text-[#9b9b9b] uppercase tracking-wide mt-0.5">
+                          <p className="font-heading text-xs text-[#9b9b9b] uppercase tracking-wide mt-0.5">
                             {promo.classLabel}
                           </p>
                         </div>
@@ -298,39 +298,39 @@ export default function PricingPage() {
 
                       {promo.classes === null && (
                         <div className="mb-4 pb-4 border-b border-[#EDE7DF]">
-                          <p className="font-['Stolen_Love'] text-xs text-[#9b9b9b] uppercase tracking-wide">
+                          <p className="font-heading text-xs text-[#9b9b9b] uppercase tracking-wide">
                             {promo.classLabel}
                           </p>
                         </div>
                       )}
 
                       <div className="mb-3">
-                        <p className="font-['Stolen_Love'] text-3xl text-[#1A1410]">
+                        <p className="font-heading text-3xl text-[#1A1410]">
                           {promo.price}
                         </p>
-                        <p className="font-['Stolen_Love'] text-xs text-[#A48D78]">
+                        <p className="font-heading text-xs text-[#A48D78]">
                           {promo.priceSub}
                         </p>
                       </div>
 
-                      <p className="font-['Stolen_Love'] text-sm text-[#6b6b6b] italic mb-4 leading-snug">
+                      <p className="font-heading text-sm text-[#6b6b6b] italic mb-4 leading-snug">
                         {promo.highlight}
                       </p>
 
                       {promo.expires && (
-                        <p className="font-['Stolen_Love'] text-[11px] mb-4 text-[#82614A]">
+                        <p className="font-heading text-[11px] mb-4 text-[#82614A]">
                           ⏳ {promo.expires}
                         </p>
                       )}
 
                       {promo.name === "15% Off Any Package" ? (
-                        <div className="mt-auto block w-full py-2.5 rounded-full font-['Stolen_Love'] text-sm text-center text-white bg-[#82614A]">
+                        <div className="mt-auto block w-full py-2.5 rounded-full font-heading text-sm text-center text-white bg-[#82614A]">
                           Code: <span className="font-bold">MARCHPH</span>
                         </div>
                       ) : (
                         <Link
                           href="/book-now"
-                          className="mt-auto block w-full py-2.5 rounded-full font-['Stolen_Love'] text-sm text-center text-white bg-[#82614A] hover:bg-[#6d5038] transition"
+                          className="mt-auto block w-full py-2.5 rounded-full font-heading text-sm text-center text-white bg-[#82614A] hover:bg-[#6d5038] transition"
                         >
                           Claim Offer
                         </Link>
@@ -343,22 +343,22 @@ export default function PricingPage() {
               <div className="mt-10 max-w-3xl mx-auto rounded-2xl p-6 flex flex-col sm:flex-row items-center gap-4 text-white bg-[#82614A]">
                 <Tag className="w-8 h-8 shrink-0 opacity-80" />
                 <div className="flex-1 text-center sm:text-left">
-                  <p className="font-['Stolen_Love'] text-lg italic">
+                  <p className="font-heading text-lg italic">
                     Use code <span className="font-bold not-italic">MARCHPH</span> at checkout for 15% off any regular Haus Package this March.
                   </p>
-                  <p className="font-['Stolen_Love'] text-sm opacity-75 mt-1">
+                  <p className="font-heading text-sm opacity-75 mt-1">
                     Cannot be combined with other promotions. Valid March 2026 only.
                   </p>
                 </div>
                 <Link
                   href="/book-now"
-                  className="shrink-0 px-6 py-2.5 rounded-full font-['Stolen_Love'] text-sm bg-white text-[#82614A] transition hover:bg-[#F5F2EC]"
+                  className="shrink-0 px-6 py-2.5 rounded-full font-heading text-sm bg-white text-[#82614A] transition hover:bg-[#F5F2EC]"
                 >
                   Book Now
                 </Link>
               </div>
 
-              <p className="font-['Stolen_Love'] text-center text-[#A48D78] mt-8 text-sm">
+              <p className="font-heading text-center text-[#A48D78] mt-8 text-sm">
                 Promotions are subject to availability and cannot be combined unless stated.{" "}
                 <a href="mailto:info@pilateshaus.ca" className="underline hover:text-[#82614A]">
                   info@pilateshaus.ca
@@ -371,13 +371,13 @@ export default function PricingPage() {
           {activeTab === "packages" && (
             <div>
               <div className="text-center mb-10">
-                <div className="inline-block px-4 py-1 rounded-full mb-4 font-['Stolen_Love'] text-white text-sm bg-[#82614A]">
+                <div className="inline-block px-4 py-1 rounded-full mb-4 font-heading text-white text-sm bg-[#82614A]">
                   Haus Packages
                 </div>
-                <h2 className="font-['Stolen_Love'] text-4xl md:text-5xl text-[#1A1410] mb-3">
+                <h2 className="font-heading text-4xl md:text-5xl text-[#1A1410] mb-3">
                   Find Your Rhythm
                 </h2>
-                <p className="font-['Stolen_Love'] text-lg text-[#A48D78] italic max-w-xl mx-auto">
+                <p className="font-heading text-lg text-[#A48D78] italic max-w-xl mx-auto">
                   Flexible packages for every stage of your Pilates journey.
                 </p>
               </div>
@@ -391,15 +391,15 @@ export default function PricingPage() {
                     <div className="px-5 py-4 bg-[#82614A]">
                       <div className="flex items-start justify-between gap-2">
                         <div>
-                          <p className="font-['Stolen_Love'] text-lg leading-tight text-white">
+                          <p className="font-heading text-lg leading-tight text-white">
                             {plan.name}
                           </p>
-                          <p className="font-['Stolen_Love'] text-xs mt-0.5 text-white/75">
+                          <p className="font-heading text-xs mt-0.5 text-white/75">
                             {plan.duration}
                           </p>
                         </div>
                         {plan.badge && (
-                          <span className="shrink-0 bg-white/20 text-white font-['Stolen_Love'] text-[10px] px-2 py-0.5 rounded-full whitespace-nowrap">
+                          <span className="shrink-0 bg-white/20 text-white font-heading text-[10px] px-2 py-0.5 rounded-full whitespace-nowrap">
                             {plan.badge}
                           </span>
                         )}
@@ -408,26 +408,26 @@ export default function PricingPage() {
 
                     <div className="px-5 py-5 flex flex-col flex-1">
                       <div className="mb-4 pb-4 border-b border-[#EDE7DF]">
-                        <span className="font-['Stolen_Love'] text-4xl text-[#82614A]">
+                        <span className="font-heading text-4xl text-[#82614A]">
                           {plan.classes ?? "∞"}
                         </span>
-                        <p className="font-['Stolen_Love'] text-xs text-[#9b9b9b] uppercase tracking-wide mt-0.5">
+                        <p className="font-heading text-xs text-[#9b9b9b] uppercase tracking-wide mt-0.5">
                           {plan.classLabel}
                         </p>
                       </div>
 
                       <div className="mb-5">
-                        <p className="font-['Stolen_Love'] text-3xl text-[#1A1410]">
+                        <p className="font-heading text-3xl text-[#1A1410]">
                           {plan.price}
                         </p>
-                        <p className="font-['Stolen_Love'] text-xs text-[#A48D78]">
+                        <p className="font-heading text-xs text-[#A48D78]">
                           {plan.priceSub}
                         </p>
                       </div>
 
                       <Link
                         href="/book-now"
-                        className="mt-auto block w-full py-2.5 rounded-full font-['Stolen_Love'] text-sm text-center text-white bg-[#82614A] hover:bg-[#6d5038] transition"
+                        className="mt-auto block w-full py-2.5 rounded-full font-heading text-sm text-center text-white bg-[#82614A] hover:bg-[#6d5038] transition"
                       >
                         Purchase
                       </Link>
@@ -436,7 +436,7 @@ export default function PricingPage() {
                 ))}
               </div>
 
-              <p className="font-['Stolen_Love'] text-center text-[#A48D78] mt-8 text-sm">
+              <p className="font-heading text-center text-[#A48D78] mt-8 text-sm">
                 All packages can be purchased online or at the studio. Questions?{" "}
                 <a href="mailto:info@pilateshaus.ca" className="underline hover:text-[#82614A]">
                   info@pilateshaus.ca
@@ -449,13 +449,13 @@ export default function PricingPage() {
           {activeTab === "classPacks" && (
             <div>
               <div className="text-center mb-10">
-                <div className="inline-block px-4 py-1 rounded-full mb-4 font-['Stolen_Love'] text-white text-sm bg-[#82614A]">
+                <div className="inline-block px-4 py-1 rounded-full mb-4 font-heading text-white text-sm bg-[#82614A]">
                   Class Packs
                 </div>
-                <h2 className="font-['Stolen_Love'] text-4xl md:text-5xl text-[#1A1410] mb-3">
+                <h2 className="font-heading text-4xl md:text-5xl text-[#1A1410] mb-3">
                   Pre-Pay for Multiple Classes
                 </h2>
-                <p className="font-['Stolen_Love'] text-lg text-[#A48D78] italic max-w-xl mx-auto">
+                <p className="font-heading text-lg text-[#A48D78] italic max-w-xl mx-auto">
                   Save money and plan ahead with our class packs.
                 </p>
               </div>
@@ -469,15 +469,15 @@ export default function PricingPage() {
                     <div className="px-5 py-4 bg-[#82614A]">
                       <div className="flex items-start justify-between gap-2">
                         <div>
-                          <p className="font-['Stolen_Love'] text-lg leading-tight text-white">
+                          <p className="font-heading text-lg leading-tight text-white">
                             {plan.name}
                           </p>
-                          <p className="font-['Stolen_Love'] text-xs mt-0.5 text-white/75">
+                          <p className="font-heading text-xs mt-0.5 text-white/75">
                             {plan.duration}
                           </p>
                         </div>
                         {plan.badge && (
-                          <span className="shrink-0 bg-white/20 text-white font-['Stolen_Love'] text-[10px] px-2 py-0.5 rounded-full whitespace-nowrap">
+                          <span className="shrink-0 bg-white/20 text-white font-heading text-[10px] px-2 py-0.5 rounded-full whitespace-nowrap">
                             {plan.badge}
                           </span>
                         )}
@@ -486,26 +486,26 @@ export default function PricingPage() {
 
                     <div className="px-5 py-5 flex flex-col flex-1">
                       <div className="mb-4 pb-4 border-b border-[#EDE7DF]">
-                        <span className="font-['Stolen_Love'] text-4xl text-[#82614A]">
+                        <span className="font-heading text-4xl text-[#82614A]">
                           {plan.classes}
                         </span>
-                        <p className="font-['Stolen_Love'] text-xs text-[#9b9b9b] uppercase tracking-wide mt-0.5">
+                        <p className="font-heading text-xs text-[#9b9b9b] uppercase tracking-wide mt-0.5">
                           {plan.classLabel}
                         </p>
                       </div>
 
                       <div className="mb-5">
-                        <p className="font-['Stolen_Love'] text-3xl text-[#1A1410]">
+                        <p className="font-heading text-3xl text-[#1A1410]">
                           {plan.price}
                         </p>
-                        <p className="font-['Stolen_Love'] text-xs text-[#A48D78]">
+                        <p className="font-heading text-xs text-[#A48D78]">
                           {plan.priceSub}
                         </p>
                       </div>
 
                       <Link
                         href="/book-now"
-                        className="mt-auto block w-full py-2.5 rounded-full font-['Stolen_Love'] text-sm text-center text-white bg-[#82614A] hover:bg-[#6d5038] transition"
+                        className="mt-auto block w-full py-2.5 rounded-full font-heading text-sm text-center text-white bg-[#82614A] hover:bg-[#6d5038] transition"
                       >
                         Purchase
                       </Link>
@@ -514,7 +514,7 @@ export default function PricingPage() {
                 ))}
               </div>
 
-              <p className="font-['Stolen_Love'] text-center text-[#A48D78] mt-8 text-sm">
+              <p className="font-heading text-center text-[#A48D78] mt-8 text-sm">
                 All class packs can be purchased online or at the studio. Questions?{" "}
                 <a href="mailto:info@pilateshaus.ca" className="underline hover:text-[#82614A]">
                   info@pilateshaus.ca
@@ -528,7 +528,7 @@ export default function PricingPage() {
       {/* FAQ Section */}
       <section className="py-20 bg-[#D9D2C6]">
         <div className="max-w-[1440px] mx-auto px-6">
-          <h2 className="font-['Stolen_Love'] text-4xl md:text-5xl text-center mb-12 text-[#1A1410]">
+          <h2 className="font-heading text-4xl md:text-5xl text-center mb-12 text-[#1A1410]">
             Frequently Asked Questions
           </h2>
           <div className="max-w-3xl mx-auto space-y-4">
@@ -538,7 +538,7 @@ export default function PricingPage() {
                   onClick={() => setOpenFaq(openFaq === index ? null : index)}
                   className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#F5F2EC] transition"
                 >
-                  <span className="font-['Stolen_Love'] text-xl text-[#1A1410]">
+                  <span className="font-heading text-xl text-[#1A1410]">
                     {faq.question}
                   </span>
                   <ChevronDown
@@ -549,7 +549,7 @@ export default function PricingPage() {
                 </button>
                 {openFaq === index && (
                   <div className="px-8 pb-6">
-                    <p className="font-['Stolen_Love'] text-[#1A1410] leading-relaxed">
+                    <p className="font-heading text-[#1A1410] leading-relaxed">
                       {faq.answer}
                     </p>
                   </div>
@@ -560,7 +560,7 @@ export default function PricingPage() {
           <div className="text-center mt-8">
             <Link
               href="/contact"
-              className="font-['Stolen_Love'] text-[#82614A] hover:text-[#6d5038] transition"
+              className="font-heading text-[#82614A] hover:text-[#6d5038] transition"
             >
               See Full FAQ →
             </Link>

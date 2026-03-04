@@ -25,19 +25,19 @@ export function Navbar() {
 
         {/* Desktop Nav Links */}
         <div className="hidden md:flex items-center gap-8">
-          <Link href="/" className="font-['Stolen_Love'] text-[#1A1410] hover:text-[#82614A] transition">
+          <Link href="/" className="font-heading text-[#1A1410] hover:text-[#82614A] transition">
             Home
           </Link>
-          <Link href="/classes" className="font-['Stolen_Love'] text-[#1A1410] hover:text-[#82614A] transition">
+          <Link href="/classes" className="font-heading text-[#1A1410] hover:text-[#82614A] transition">
             Classes
           </Link>
-          <Link href="/pricing" className="font-['Stolen_Love'] text-[#1A1410] hover:text-[#82614A] transition">
+          <Link href="/pricing" className="font-heading text-[#1A1410] hover:text-[#82614A] transition">
             Pricing
           </Link>
-          <Link href="/about" className="font-['Stolen_Love'] text-[#1A1410] hover:text-[#82614A] transition">
+          <Link href="/about" className="font-heading text-[#1A1410] hover:text-[#82614A] transition">
             About
           </Link>
-          <Link href="/contact" className="font-['Stolen_Love'] text-[#1A1410] hover:text-[#82614A] transition">
+          <Link href="/contact" className="font-heading text-[#1A1410] hover:text-[#82614A] transition">
             Contact
           </Link>
         </div>
@@ -46,7 +46,7 @@ export function Navbar() {
         <div className="hidden md:block">
           <Link
             href="/book-now"
-            className="px-6 py-3 bg-[#82614A] text-white font-['Stolen_Love'] rounded-full hover:bg-[#6d5038] transition"
+            className="px-6 py-3 bg-[#82614A] text-white font-heading rounded-full hover:bg-[#6d5038] transition"
           >
             Book Now
           </Link>
@@ -68,42 +68,42 @@ export function Navbar() {
           <div className="flex flex-col gap-4">
             <Link
               href="/"
-              className="font-['Stolen_Love'] text-[#1A1410] hover:text-[#82614A] py-2"
+              className="font-heading text-[#1A1410] hover:text-[#82614A] py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
               Home
             </Link>
             <Link
               href="/classes"
-              className="font-['Stolen_Love'] text-[#1A1410] hover:text-[#82614A] py-2"
+              className="font-heading text-[#1A1410] hover:text-[#82614A] py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
               Classes
             </Link>
             <Link
               href="/pricing"
-              className="font-['Stolen_Love'] text-[#1A1410] hover:text-[#82614A] py-2"
+              className="font-heading text-[#1A1410] hover:text-[#82614A] py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
               Pricing
             </Link>
             <Link
               href="/about"
-              className="font-['Stolen_Love'] text-[#1A1410] hover:text-[#82614A] py-2"
+              className="font-heading text-[#1A1410] hover:text-[#82614A] py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
               About
             </Link>
             <Link
               href="/contact"
-              className="font-['Stolen_Love'] text-[#1A1410] hover:text-[#82614A] py-2"
+              className="font-heading text-[#1A1410] hover:text-[#82614A] py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
               Contact
             </Link>
             <Link
               href="/book-now"
-              className="px-6 py-3 bg-[#82614A] text-white font-['Stolen_Love'] rounded-full hover:bg-[#6d5038] transition text-center"
+              className="px-6 py-3 bg-[#82614A] text-white font-heading rounded-full hover:bg-[#6d5038] transition text-center"
               onClick={() => setMobileMenuOpen(false)}
             >
               Book Now

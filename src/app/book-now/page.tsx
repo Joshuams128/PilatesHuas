@@ -21,10 +21,10 @@ function BookNow() {
       {/* Page Header */}
       <section className="bg-[#82614A] py-20">
         <div className="max-w-[1440px] mx-auto px-6 text-center">
-          <h1 className="font-['Stolen_Love'] text-5xl md:text-7xl text-white mb-6">
+          <h1 className="font-heading text-5xl md:text-7xl text-white mb-6">
             Book a Class
           </h1>
-          <p className="font-['Stolen_Love'] text-xl md:text-2xl text-white/90 max-w-3xl mx-auto italic">
+          <p className="font-heading text-xl md:text-2xl text-white/90 max-w-3xl mx-auto italic">
             Reserve your spot in our next class.
           </p>
         </div>
@@ -33,7 +33,7 @@ function BookNow() {
       {/* New to Pilates Haus Reminder */}
       <section className="py-12 bg-[#D9D2C6]">
         <div className="max-w-[1440px] mx-auto px-6">
-          <h2 className="font-['Stolen_Love'] text-2xl text-center mb-8 text-[#1A1410]">
+          <h2 className="font-heading text-2xl text-center mb-8 text-[#1A1410]">
             New to Pilates Haus?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
@@ -42,13 +42,13 @@ function BookNow() {
                 key={index}
                 className="bg-white rounded-2xl p-6 text-center hover:shadow-lg transition"
               >
-                <h3 className="font-['Stolen_Love'] text-xl mb-2 text-[#1A1410]">
+                <h3 className="font-heading text-xl mb-2 text-[#1A1410]">
                   {offer.name}
                 </h3>
-                <div className="font-['Stolen_Love'] text-4xl mb-2 text-[#82614A]">
+                <div className="font-heading text-4xl mb-2 text-[#82614A]">
                   {offer.price}
                 </div>
-                <p className="font-['Stolen_Love'] text-sm text-[#1A1410]">
+                <p className="font-heading text-sm text-[#1A1410]">
                   {offer.description}
                 </p>
               </div>
@@ -62,7 +62,7 @@ function BookNow() {
         <div className="max-w-[1440px] mx-auto px-6">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-8">
-              <p className="font-['Stolen_Love'] text-lg text-[#1A1410] mb-4">
+              <p className="font-heading text-lg text-[#1A1410] mb-4">
                 Select your preferred class time below to reserve your spot.
               </p>
             </div>
@@ -72,7 +72,7 @@ function BookNow() {
 
             {/* Contact Info */}
             <div className="text-center mt-12">
-              <p className="font-['Stolen_Love'] text-[#1A1410]">
+              <p className="font-heading text-[#1A1410]">
                 Questions about booking?{" "}
                 <a
                   href="mailto:info@pilateshaus.ca"
@@ -90,33 +90,33 @@ function BookNow() {
       <section className="py-20 bg-[#F5F2EC]">
         <div className="max-w-[1440px] mx-auto px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="font-['Stolen_Love'] text-4xl text-center mb-12 text-[#1A1410]">
+            <h2 className="font-heading text-4xl text-center mb-12 text-[#1A1410]">
               What to Expect
             </h2>
             <div className="space-y-8">
               <div>
-                <h3 className="font-['Stolen_Love'] text-2xl mb-3 text-[#1A1410]">
+                <h3 className="font-heading text-2xl mb-3 text-[#1A1410]">
                   Before Your First Class
                 </h3>
-                <p className="font-['Stolen_Love'] text-[#1A1410] leading-relaxed">
+                <p className="font-heading text-[#1A1410] leading-relaxed">
                   Arrive 10-15 minutes early to complete your intake form and meet your instructor.
                   They&apos;ll walk you through the reformer and answer any questions.
                 </p>
               </div>
               <div>
-                <h3 className="font-['Stolen_Love'] text-2xl mb-3 text-[#1A1410]">
+                <h3 className="font-heading text-2xl mb-3 text-[#1A1410]">
                   Cancellation Policy
                 </h3>
-                <p className="font-['Stolen_Love'] text-[#1A1410] leading-relaxed">
+                <p className="font-heading text-[#1A1410] leading-relaxed">
                   Please cancel or reschedule at least 8 hours before your class time. Late
                   cancellations may result in loss of class credit to be fair to our waitlist.
                 </p>
               </div>
               <div>
-                <h3 className="font-['Stolen_Love'] text-2xl mb-3 text-[#1A1410]">
+                <h3 className="font-heading text-2xl mb-3 text-[#1A1410]">
                   What to Bring
                 </h3>
-                <p className="font-['Stolen_Love'] text-[#1A1410] leading-relaxed">
+                <p className="font-heading text-[#1A1410] leading-relaxed">
                   Just yourself! We provide all equipment. Wear comfortable athletic wear and bring
                   water. Grip socks are mandatory and available for purchase at the studio.
                 </p>

@@ -17,7 +17,8 @@ const config: Config = {
         "ph-dark": "#1A1410",
       },
       fontFamily: {
-        "stolen-love": ["'Stolen Love'", "serif"],
+        heading: ["'Cormorant Garamond'", "serif"],
+        body: ["'Nunito Sans'", "sans-serif"],
       },
     },
   },

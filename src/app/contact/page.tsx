@@ -62,10 +62,10 @@ function Contact() {
       {/* Page Header */}
       <section className="bg-[#82614A] py-20">
         <div className="max-w-[1440px] mx-auto px-6 text-center">
-          <h1 className="font-['Stolen_Love'] text-5xl md:text-7xl text-white mb-6">
+          <h1 className="font-heading text-5xl md:text-7xl text-white mb-6">
             Get In Touch
           </h1>
-          <p className="font-['Stolen_Love'] text-xl md:text-2xl text-white/90 max-w-3xl mx-auto italic">
+          <p className="font-heading text-xl md:text-2xl text-white/90 max-w-3xl mx-auto italic">
             We&apos;d love to hear from you. Reach out with any questions.
           </p>
         </div>
@@ -77,14 +77,14 @@ function Contact() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div>
-              <h2 className="font-['Stolen_Love'] text-4xl mb-8 text-[#1A1410]">
+              <h2 className="font-heading text-4xl mb-8 text-[#1A1410]">
                 Send Us a Message
               </h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label
                     htmlFor="name"
-                    className="block font-['Stolen_Love'] text-lg mb-2 text-[#1A1410]"
+                    className="block font-heading text-lg mb-2 text-[#1A1410]"
                   >
                     Name
                   </label>
@@ -95,13 +95,13 @@ function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 rounded-lg border border-[#D9D2C6] bg-white font-['Stolen_Love'] focus:outline-none focus:ring-2 focus:ring-[#82614A]"
+                    className="w-full px-4 py-3 rounded-lg border border-[#D9D2C6] bg-white font-heading focus:outline-none focus:ring-2 focus:ring-[#82614A]"
                   />
                 </div>
                 <div>
                   <label
                     htmlFor="email"
-                    className="block font-['Stolen_Love'] text-lg mb-2 text-[#1A1410]"
+                    className="block font-heading text-lg mb-2 text-[#1A1410]"
                   >
                     Email
                   </label>
@@ -112,13 +112,13 @@ function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 rounded-lg border border-[#D9D2C6] bg-white font-['Stolen_Love'] focus:outline-none focus:ring-2 focus:ring-[#82614A]"
+                    className="w-full px-4 py-3 rounded-lg border border-[#D9D2C6] bg-white font-heading focus:outline-none focus:ring-2 focus:ring-[#82614A]"
                   />
                 </div>
                 <div>
                   <label
                     htmlFor="phone"
-                    className="block font-['Stolen_Love'] text-lg mb-2 text-[#1A1410]"
+                    className="block font-heading text-lg mb-2 text-[#1A1410]"
                   >
                     Phone
                   </label>
@@ -128,13 +128,13 @@ function Contact() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-[#D9D2C6] bg-white font-['Stolen_Love'] focus:outline-none focus:ring-2 focus:ring-[#82614A]"
+                    className="w-full px-4 py-3 rounded-lg border border-[#D9D2C6] bg-white font-heading focus:outline-none focus:ring-2 focus:ring-[#82614A]"
                   />
                 </div>
                 <div>
                   <label
                     htmlFor="message"
-                    className="block font-['Stolen_Love'] text-lg mb-2 text-[#1A1410]"
+                    className="block font-heading text-lg mb-2 text-[#1A1410]"
                   >
                     Message
                   </label>
@@ -145,23 +145,23 @@ function Contact() {
                     onChange={handleChange}
                     required
                     rows={6}
-                    className="w-full px-4 py-3 rounded-lg border border-[#D9D2C6] bg-white font-['Stolen_Love'] focus:outline-none focus:ring-2 focus:ring-[#82614A] resize-none"
+                    className="w-full px-4 py-3 rounded-lg border border-[#D9D2C6] bg-white font-heading focus:outline-none focus:ring-2 focus:ring-[#82614A] resize-none"
                   />
                 </div>
                 <button
                   type="submit"
                   disabled={isLoading}
-                  className="w-full px-8 py-4 bg-[#82614A] text-white font-['Stolen_Love'] rounded-full hover:bg-[#6d5038] transition disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full px-8 py-4 bg-[#82614A] text-white font-heading rounded-full hover:bg-[#6d5038] transition disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isLoading ? "Sending..." : "Send Message"}
                 </button>
                 {submitStatus === "success" && (
-                  <div className="p-4 bg-green-100 text-green-800 rounded-lg font-['Stolen_Love']">
+                  <div className="p-4 bg-green-100 text-green-800 rounded-lg font-heading">
                     Thank you for your message! We&apos;ll get back to you soon.
                   </div>
                 )}
                 {submitStatus === "error" && (
-                  <div className="p-4 bg-red-100 text-red-800 rounded-lg font-['Stolen_Love']">
+                  <div className="p-4 bg-red-100 text-red-800 rounded-lg font-heading">
                     There was an error sending your message. Please try again.
                   </div>
                 )}
@@ -170,7 +170,7 @@ function Contact() {
 
             {/* Studio Info */}
             <div>
-              <h2 className="font-['Stolen_Love'] text-4xl mb-8 text-[#1A1410]">
+              <h2 className="font-heading text-4xl mb-8 text-[#1A1410]">
                 Visit Our Studio
               </h2>
               
@@ -181,8 +181,8 @@ function Contact() {
                     <MapPin className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="font-['Stolen_Love'] text-xl mb-2 text-[#1A1410]">Location</h3>
-                    <p className="font-['Stolen_Love'] text-[#1A1410]">
+                    <h3 className="font-heading text-xl mb-2 text-[#1A1410]">Location</h3>
+                    <p className="font-heading text-[#1A1410]">
                       2460 Brock Rd Unit C 303
                       <br />
                       Pickering, ON
@@ -198,26 +198,26 @@ function Contact() {
                     <Mail className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="font-['Stolen_Love'] text-xl mb-3 text-[#1A1410]">Get in Touch</h3>
+                    <h3 className="font-heading text-xl mb-3 text-[#1A1410]">Get in Touch</h3>
                     <div className="space-y-3">
                       <div>
-                        <p className="font-['Stolen_Love'] text-sm text-[#1A1410] mb-1">
+                        <p className="font-heading text-sm text-[#1A1410] mb-1">
                           For bookings & membership support:
                         </p>
                         <a
                           href="mailto:info@pilateshaus.ca"
-                          className="font-['Stolen_Love'] text-[#82614A] hover:text-[#6d5038] transition"
+                          className="font-heading text-[#82614A] hover:text-[#6d5038] transition"
                         >
                           info@pilateshaus.ca
                         </a>
                       </div>
                       <div>
-                        <p className="font-['Stolen_Love'] text-sm text-[#1A1410] mb-1">
+                        <p className="font-heading text-sm text-[#1A1410] mb-1">
                           For partnerships, collaborations, and general inquiries:
                         </p>
                         <a
                           href="mailto:admin@pilateshaus.ca"
-                          className="font-['Stolen_Love'] text-[#82614A] hover:text-[#6d5038] transition"
+                          className="font-heading text-[#82614A] hover:text-[#6d5038] transition"
                         >
                           admin@pilateshaus.ca
                         </a>
@@ -234,7 +234,7 @@ function Contact() {
                     <Clock className="w-6 h-6 text-white" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="font-['Stolen_Love'] text-xl mb-4 text-[#1A1410]">
+                    <h3 className="font-heading text-xl mb-4 text-[#1A1410]">
                       Studio Hours
                     </h3>
                     <div className="bg-white rounded-xl p-6 border border-[#D9D2C6]">
@@ -245,8 +245,8 @@ function Contact() {
                             index !== studioHours.length - 1 ? "border-b border-[#D9D2C6]" : ""
                           }`}
                         >
-                          <span className="font-['Stolen_Love'] text-[#1A1410]">{item.day}</span>
-                          <span className="font-['Stolen_Love'] text-[#82614A]">{item.hours}</span>
+                          <span className="font-heading text-[#1A1410]">{item.day}</span>
+                          <span className="font-heading text-[#82614A]">{item.hours}</span>
                         </div>
                       ))}
                     </div>
@@ -275,10 +275,10 @@ function Contact() {
       {/* Additional Info */}
       <section className="py-20 bg-[#D9D2C6]">
         <div className="max-w-[1440px] mx-auto px-6 text-center">
-          <h2 className="font-['Stolen_Love'] text-4xl md:text-5xl mb-6 text-[#1A1410]">
+          <h2 className="font-heading text-4xl md:text-5xl mb-6 text-[#1A1410]">
             Have Questions?
           </h2>
-          <p className="font-['Stolen_Love'] text-xl mb-8 text-[#1A1410] max-w-3xl mx-auto italic">
+          <p className="font-heading text-xl mb-8 text-[#1A1410] max-w-3xl mx-auto italic">
             Whether you&apos;re new to Pilates or an experienced practitioner, we&apos;re here to help. Don&apos;t
             hesitate to reach out with any questions about our classes, pricing, or studio policies.
           </p>
