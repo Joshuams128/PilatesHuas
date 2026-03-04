@@ -157,7 +157,7 @@ function Contact() {
                 </button>
                 {submitStatus === "success" && (
                   <div className="p-4 bg-green-100 text-green-800 rounded-lg font-['Stolen_Love']">
-                    Thank you for your message! We'll get back to you soon.
+                    Thank you for your message! We&apos;ll get back to you soon.
                   </div>
                 )}
                 {submitStatus === "error" && (
