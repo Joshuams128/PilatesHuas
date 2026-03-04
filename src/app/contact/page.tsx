@@ -217,17 +217,18 @@ function Contact() {
                 </div>
               </div>
 
-              {/* Google Maps Placeholder */}
-              <div className="bg-[#D9D2C6] rounded-2xl h-80 flex items-center justify-center">
-                <div className="text-center">
-                  <MapPin className="w-16 h-16 text-[#82614A] mx-auto mb-4" />
-                  <p className="font-['Stolen_Love'] text-xl text-[#1A1410] italic">
-                    Google Maps Embed
-                  </p>
-                  <p className="font-['Stolen_Love'] text-sm text-[#1A1410] mt-2">
-                    2460 Brock Rd Unit C 303, Pickering, ON
-                  </p>
-                </div>
+              {/* Google Maps Embed */}
+              <div className="rounded-2xl h-80 overflow-hidden shadow-lg">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  frameBorder="0"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.3264482736944!2d-79.0877578!3d43.86982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4df8e6b57588b%3A0x5ceebb399cbae37f!2s2460%20Brock%20Rd%20Unit%20C%203rd%20Floor%2C%20Pickering%2C%20ON%20L1X%200J1!5e0!3m2!1sen!2sca!4v1"
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Pilates Haus Location"
+                />
               </div>
             </div>
           </div>

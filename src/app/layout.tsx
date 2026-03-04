@@ -18,6 +18,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* Preload critical hero image */}
+        <link
+          rel="preload"
+          as="image"
+          href="/images/marjanphotgraphy1_MAR0020.jpg"
+          type="image/jpeg"
+        />
+      </head>
       <body>
         <Navbar />
         <main>{children}</main>

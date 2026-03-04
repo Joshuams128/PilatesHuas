@@ -194,6 +194,7 @@ function WellnessLivingWidget() {
             height={39}
             width={267}
             style={{ height: "39px", width: "267px" }}
+            loading="lazy"
           />
         </a>
       </div>

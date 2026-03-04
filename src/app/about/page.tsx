@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Target, Heart, Users } from "lucide-react";
 
 function About() {
@@ -59,10 +60,13 @@ function About() {
               </p>
             </div>
             <div className="rounded-2xl overflow-hidden shadow-2xl">
-              <img
+              <Image
                 src="/images/marjanphotgraphy1_MAR0101.jpg"
                 alt="Pilates Haus Studio Interior"
+                width={500}
+                height={500}
                 className="w-full h-full object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
           </div>
@@ -107,24 +111,36 @@ function About() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="rounded-2xl overflow-hidden shadow-lg h-80">
-              <img
+              <Image
                 src="/images/marjanphotgraphy1_MAR0015.jpg"
                 alt="Studio Photo 1"
+                width={400}
+                height={320}
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                sizes="(max-width: 768px) 100vw, 33vw"
+                loading="lazy"
               />
             </div>
             <div className="rounded-2xl overflow-hidden shadow-lg h-80">
-              <img
+              <Image
                 src="/images/marjanphotgraphy1_MAR0103.jpg"
                 alt="Studio Photo 2"
+                width={400}
+                height={320}
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                sizes="(max-width: 768px) 100vw, 33vw"
+                loading="lazy"
               />
             </div>
             <div className="rounded-2xl overflow-hidden shadow-lg h-80">
-              <img
+              <Image
                 src="/images/marjanphotgraphy1_MAR0018.jpg"
                 alt="Studio Photo 3"
+                width={400}
+                height={320}
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                sizes="(max-width: 768px) 100vw, 33vw"
+                loading="lazy"
               />
             </div>
           </div>

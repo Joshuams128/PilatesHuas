@@ -41,9 +41,9 @@ export default function Home() {
             backgroundImage: "url('/images/marjanphotgraphy1_MAR0020.jpg')"
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40" />
         <div className="relative h-full max-w-[1440px] mx-auto px-6 flex flex-col justify-center">
-          <h1 className="font-['Stolen_Love'] text-5xl md:text-7xl text-white mb-6 max-w-3xl">
+          <h1 className="font-['Stolen_Love'] font-light text-5xl md:text-7xl text-white mb-6 max-w-3xl">
             Movement. Intention. Strength.
           </h1>
           <p className="font-['Stolen_Love'] text-xl md:text-2xl text-white/90 mb-8 max-w-2xl italic">
