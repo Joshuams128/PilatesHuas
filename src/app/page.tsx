@@ -38,7 +38,8 @@ export default function Home() {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/images/marjanphotgraphy1_MAR0020.jpg')"
+            backgroundImage: "url('/images/marjanphotgraphy1_MAR0020.jpg')",
+            backgroundAttachment: "fixed"
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40" />

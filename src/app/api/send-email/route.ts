@@ -16,8 +16,8 @@ export async function POST(request: Request) {
 
     // Send email to admin
     const adminEmailResult = await resend.emails.send({
-      from: "contact@pilateshaus.ca",
-      to: ["admin@pilateshaus.ca", "info@pilateshaus.ca"],
+      from: "onboarding@resend.dev",
+      to: "Joshuams128@gmail.com",
       subject: `New Contact Form Submission from ${name}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px;">
@@ -39,26 +39,6 @@ export async function POST(request: Request) {
         { status: 500 }
       );
     }
-
-    // Send confirmation email to user
-    await resend.emails.send({
-      from: "contact@pilateshaus.ca",
-      to: email,
-      subject: "We received your message - Pilates Haus",
-      html: `
-        <div style="font-family: Arial, sans-serif; max-width: 600px;">
-          <h2>Thank You, ${name}!</h2>
-          <p>We've received your message and will get back to you as soon as possible.</p>
-          <p>If you have any urgent matters, feel free to contact us directly:</p>
-          <ul>
-            <li><strong>For bookings:</strong> info@pilateshaus.ca</li>
-            <li><strong>For general inquiries:</strong> admin@pilateshaus.ca</li>
-          </ul>
-          <p>Movement. Intention. Strength.</p>
-          <p><em>- The Pilates Haus Team</em></p>
-        </div>
-      `,
-    });
 
     return Response.json(
       { success: "Email sent successfully" },
