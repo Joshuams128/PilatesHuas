@@ -17,8 +17,8 @@ const config: Config = {
         "ph-dark": "#1A1410",
       },
       fontFamily: {
-        heading: ["'Cormorant Garamond'", "serif"],
-        body: ["'Nunito Sans'", "sans-serif"],
+        heading: ["'Fredoka One'", "sans-serif"],
+        body: ["'Poppins'", "sans-serif"],
       },
     },
   },

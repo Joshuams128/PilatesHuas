@@ -2,7 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Nunito+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inria+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap');
+
+/* Stolen Love - Using Fredoka One as a rounded alternative */
+@font-face {
+  font-family: 'Stolen Love';
+  src: local('Fredoka One');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Inria Serif - Local file */
+@font-face {
+  font-family: 'Inria Serif';
+  src: url('/fonts/Inria%20Serif.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Rugrats Sans - Using Poppins as a rounded alternative */
+@font-face {
+  font-family: 'Rugrats Sans';
+  src: local('Poppins');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
   --ph-off-white: #F5F2EC;
@@ -11,14 +38,14 @@
   --ph-muted-brown: #A48D78;
   --ph-deep-brown: #82614A;
   --ph-dark: #1A1410;
-  --font-heading: 'Cormorant Garamond', serif;
-  --font-body: 'Nunito Sans', sans-serif;
+  --font-heading: 'Fredoka One', sans-serif;
+  --font-body: 'Poppins', sans-serif;
 }
 
 @layer base {
   body {
     background-color: #F5F2EC;
     color: #1A1410;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Fredoka One', sans-serif;
   }
 }
