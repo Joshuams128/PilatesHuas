@@ -73,10 +73,7 @@ const classes = [
 ];
 
 const getDifficultyColor = (difficulty: string) => {
-  if (difficulty.includes("Beginner")) return "bg-[#CBB9A4]";
-  if (difficulty.includes("Intermediate")) return "bg-[#A48D78]";
-  if (difficulty.includes("Advanced")) return "bg-[#82614A]";
-  return "bg-[#D9D2C6]";
+  return "bg-[#82614A]";
 };
 
 export default function ClassesPage() {

@@ -195,7 +195,7 @@ export default function Home() {
                 <h3 className="font-heading text-2xl mb-2 text-[#1A1410]">
                   {classItem.name}
                 </h3>
-                <span className="inline-block px-3 py-1 bg-[#A48D78] text-white text-sm font-heading rounded-full mb-4">
+                <span className="inline-block px-3 py-1 bg-[#82614A] text-white text-sm font-heading rounded-full mb-4">
                   {classItem.difficulty}
                 </span>
                 <p className="font-heading text-[#1A1410] text-sm">

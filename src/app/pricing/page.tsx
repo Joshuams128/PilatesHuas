@@ -162,7 +162,7 @@ const faqs = [
   {
     question: "What should I wear to class?",
     answer:
-      "Wear comfortable, form-fitting athletic wear. Grip socks are recommended and available for purchase at the studio.",
+      "Wear comfortable, form-fitting athletic wear. Grip socks are mandatory and available for purchase at the studio.",
   },
   {
     question: "Do I need to bring anything?",
