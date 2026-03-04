@@ -30,7 +30,7 @@ export async function POST(request: Request) {
     // Send email to admin
     const adminEmailResult = await resend.emails.send({
       from: "noreply@pilateshaus.ca",
-      to: "info@pilateshaus.ca",
+      to: "joshuams128@gmail.com",
       subject: `New Contact Form Submission from ${sanitizedName}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; color: #333;">
