@@ -204,43 +204,46 @@ export default function PricingPage() {
         <div className="max-w-[1440px] mx-auto px-6">
 
           {/* Toggle Buttons */}
-          <div className="flex justify-center mb-14">
-            <div className="inline-flex rounded-full p-1.5 gap-2 bg-[#E8E2D8] shadow-inner">
+          <div className="flex justify-center mb-14 px-4">
+            <div className="inline-flex rounded-full p-1 gap-1 sm:gap-2 bg-[#E8E2D8] shadow-inner flex-wrap sm:flex-nowrap">
               <button
                 onClick={() => setActiveTab("promotions")}
-                className={`flex items-center gap-2.5 px-7 py-3 rounded-full font-heading transition-all duration-300 ${
+                className={`flex items-center gap-1.5 sm:gap-2.5 px-3 sm:px-7 py-2 sm:py-3 text-xs sm:text-base rounded-full font-heading transition-all duration-300 whitespace-nowrap ${
                   activeTab === "promotions"
                     ? "text-white shadow-md"
                     : "text-[#6b6b6b] hover:text-[#1A1410]"
                 }`}
                 style={activeTab === "promotions" ? { backgroundColor: "#A48D78" } : {}}
               >
-                <Tag className="w-4 h-4" />
-                Current Promotions
+                <Tag className="w-3 h-3 sm:w-4 sm:h-4" />
+                <span className="hidden sm:inline">Current Promotions</span>
+                <span className="sm:hidden">Promotions</span>
               </button>
               <button
                 onClick={() => setActiveTab("packages")}
-                className={`flex items-center gap-2.5 px-7 py-3 rounded-full font-heading transition-all duration-300 ${
+                className={`flex items-center gap-1.5 sm:gap-2.5 px-3 sm:px-7 py-2 sm:py-3 text-xs sm:text-base rounded-full font-heading transition-all duration-300 whitespace-nowrap ${
                   activeTab === "packages"
                     ? "text-white shadow-md"
                     : "text-[#6b6b6b] hover:text-[#1A1410]"
                 }`}
                 style={activeTab === "packages" ? { backgroundColor: "#82614A" } : {}}
               >
-                <Layers className="w-4 h-4" />
-                Haus Packages
+                <Layers className="w-3 h-3 sm:w-4 sm:h-4" />
+                <span className="hidden sm:inline">Haus Packages</span>
+                <span className="sm:hidden">Packages</span>
               </button>
               <button
                 onClick={() => setActiveTab("classPacks")}
-                className={`flex items-center gap-2.5 px-7 py-3 rounded-full font-heading transition-all duration-300 ${
+                className={`flex items-center gap-1.5 sm:gap-2.5 px-3 sm:px-7 py-2 sm:py-3 text-xs sm:text-base rounded-full font-heading transition-all duration-300 whitespace-nowrap ${
                   activeTab === "classPacks"
                     ? "text-white shadow-md"
                     : "text-[#6b6b6b] hover:text-[#1A1410]"
                 }`}
                 style={activeTab === "classPacks" ? { backgroundColor: "#82614A" } : {}}
               >
-                <Package className="w-4 h-4" />
-                Class Packs
+                <Package className="w-3 h-3 sm:w-4 sm:h-4" />
+                <span className="hidden sm:inline">Class Packs</span>
+                <span className="sm:hidden">Packs</span>
               </button>
             </div>
           </div>
