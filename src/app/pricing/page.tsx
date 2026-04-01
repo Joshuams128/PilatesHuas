@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Script from "next/script";
 import { ChevronDown, Tag, Layers, Package } from "lucide-react";
 import { useState } from "react";
 
@@ -187,6 +188,7 @@ export default function PricingPage() {
 
   return (
     <div className="w-full">
+      <Script src="https://widgets.wellnessliving.com/store/widget.js" type="module" strategy="afterInteractive" />
       {/* Page Header */}
       <section className="bg-[#82614A] py-20">
         <div className="max-w-[1440px] mx-auto px-6 text-center">
@@ -331,12 +333,12 @@ export default function PricingPage() {
                           Code: <span className="font-bold">MARCHPH</span>
                         </div>
                       ) : (
-                        <Link
-                          href="/book-now"
+                        <button
+                          onClick={() => document.getElementById('packages-store')?.scrollIntoView({ behavior: 'smooth' })}
                           className="mt-auto block w-full py-2.5 rounded-full font-heading text-sm text-center text-white bg-[#82614A] hover:bg-[#6d5038] transition"
                         >
                           Claim Offer
-                        </Link>
+                        </button>
                       )}
                     </div>
                   </div>
@@ -367,6 +369,11 @@ export default function PricingPage() {
                   info@pilateshaus.ca
                 </a>
               </p>
+
+              <section id="packages-store" className="w-full py-12">
+                {/* @ts-ignore */}
+                <wl-store-widget k_business="729865" k_skin="358493" k_location="" />
+              </section>
             </div>
           )}
 
