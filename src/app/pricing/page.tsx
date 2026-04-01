@@ -355,12 +355,12 @@ export default function PricingPage() {
                     Cannot be combined with other promotions. Valid March 2026 only.
                   </p>
                 </div>
-                <Link
-                  href="/book-now"
+                <button
+                  onClick={() => document.getElementById('packages-store')?.scrollIntoView({ behavior: 'smooth' })}
                   className="shrink-0 px-6 py-2.5 rounded-full font-heading text-sm bg-white text-[#82614A] transition hover:bg-[#F5F2EC]"
                 >
-                  Book Now
-                </Link>
+                  Claim Offer
+                </button>
               </div>
 
               <p className="font-heading text-center text-[#A48D78] mt-8 text-sm">
