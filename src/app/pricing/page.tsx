@@ -370,10 +370,6 @@ export default function PricingPage() {
                 </a>
               </p>
 
-              <section id="packages-store" className="w-full py-12">
-                {/* @ts-ignore */}
-                <wl-store-widget k_business="729865" k_skin="358493" k_location="" />
-              </section>
             </div>
           )}
 
@@ -532,6 +528,11 @@ export default function PricingPage() {
               </p>
             </div>
           )}
+
+          <section id="packages-store" className="w-full py-12">
+            {/* @ts-ignore */}
+            <wl-store-widget k_business="729865" k_skin="358493" k_location="" />
+          </section>
         </div>
       </section>
 
