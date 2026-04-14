@@ -9,15 +9,6 @@ type Tab = "packages" | "classPacks" | "promotions";
 
 const packagePlans = [
   {
-    name: "Drop-In",
-    duration: "Per class",
-    classes: 1,
-    classLabel: "class",
-    price: "$40",
-    priceSub: "per class",
-    badge: null,
-  },
-  {
     name: "The Haus Flow",
     duration: "30 Days",
     classes: 4,
@@ -25,42 +16,6 @@ const packagePlans = [
     price: "$99",
     priceSub: "$24.75 per class",
     badge: "Most Popular",
-  },
-  {
-    name: "Balanced 4",
-    duration: "Monthly",
-    classes: 4,
-    classLabel: "classes per month",
-    price: "$140",
-    priceSub: "$35 per class",
-    badge: null,
-  },
-  {
-    name: "Consistent 8",
-    duration: "Monthly",
-    classes: 8,
-    classLabel: "classes per month",
-    price: "$240",
-    priceSub: "$30 per class",
-    badge: null,
-  },
-  {
-    name: "Dedicated 12",
-    duration: "Monthly",
-    classes: 12,
-    classLabel: "classes per month",
-    price: "$300",
-    priceSub: "$25 per class",
-    badge: null,
-  },
-  {
-    name: "Signature 15",
-    duration: "Monthly",
-    classes: 15,
-    classLabel: "classes per month",
-    price: "$325",
-    priceSub: "$21.67 per class",
-    badge: "Best Value",
   },
   {
     name: "The Haus Unlimited",
@@ -123,39 +78,6 @@ const promotionalPlans = [
     badge: "New Clients Only",
     highlight: "Try Pilates Haus risk-free. Perfect first step.",
     expires: null,
-  },
-  {
-    name: "March Momentum",
-    duration: "30 Days",
-    classes: 4,
-    classLabel: "classes · 1 per day",
-    price: "$89",
-    priceSub: "save $10 vs. Haus Flow",
-    badge: "March Special",
-    highlight: "Kick-start your spring movement practice.",
-    expires: "Expires March 31, 2026",
-  },
-  {
-    name: "Pilates Haus Founders",
-    duration: "30 Days",
-    classes: 30,
-    classLabel: "classes · 1 per day",
-    price: "$199",
-    priceSub: "$6.63 per class",
-    badge: "Limited Spots",
-    highlight: "Exclusive founding member rate — locked in for life.",
-    expires: "While spots last",
-  },
-  {
-    name: "15% Off Any Package",
-    duration: "March Only",
-    classes: null,
-    classLabel: "applies to all packages",
-    price: "15% Off",
-    priceSub: "use code MARCHPH",
-    badge: "Promo Code",
-    highlight: "Stack savings on any regular package this month.",
-    expires: "Expires March 31, 2026",
   },
 ];
 
@@ -261,7 +183,7 @@ export default function PricingPage() {
                   Limited-Time Offers
                 </h2>
                 <p className="font-heading text-lg text-[#A48D78] italic max-w-xl mx-auto">
-                  Exclusive deals for new clients and the month of March.
+                  Exclusive deals for new clients and the month of April.
                 </p>
               </div>
 
@@ -328,39 +250,15 @@ export default function PricingPage() {
                         </p>
                       )}
 
-                      {promo.name === "15% Off Any Package" ? (
-                        <div className="mt-auto block w-full py-2.5 rounded-full font-heading text-sm text-center text-white bg-[#82614A]">
-                          Code: <span className="font-bold">MARCHPH</span>
-                        </div>
-                      ) : (
-                        <button
+                      <button
                           onClick={() => document.getElementById('packages-store')?.scrollIntoView({ behavior: 'smooth' })}
                           className="mt-auto block w-full py-2.5 rounded-full font-heading text-sm text-center text-white bg-[#82614A] hover:bg-[#6d5038] transition"
                         >
                           Claim Offer
                         </button>
-                      )}
                     </div>
                   </div>
                 ))}
-              </div>
-
-              <div className="mt-10 max-w-3xl mx-auto rounded-2xl p-6 flex flex-col sm:flex-row items-center gap-4 text-white bg-[#82614A]">
-                <Tag className="w-8 h-8 shrink-0 opacity-80" />
-                <div className="flex-1 text-center sm:text-left">
-                  <p className="font-heading text-lg italic">
-                    Use code <span className="font-bold not-italic">MARCHPH</span> at checkout for 15% off any regular Haus Package this March.
-                  </p>
-                  <p className="font-heading text-sm opacity-75 mt-1">
-                    Cannot be combined with other promotions. Valid March 2026 only.
-                  </p>
-                </div>
-                <button
-                  onClick={() => document.getElementById('packages-store')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="shrink-0 px-6 py-2.5 rounded-full font-heading text-sm bg-white text-[#82614A] transition hover:bg-[#F5F2EC]"
-                >
-                  Claim Offer
-                </button>
               </div>
 
               <p className="font-heading text-center text-[#A48D78] mt-8 text-sm">
