@@ -37,6 +37,9 @@ export function Navbar() {
           <Link href="/about" className="font-heading text-[#1A1410] hover:text-[#82614A] transition">
             About
           </Link>
+          <Link href="/faq" className="font-heading text-[#1A1410] hover:text-[#82614A] transition">
+            FAQ
+          </Link>
           <Link href="/contact" className="font-heading text-[#1A1410] hover:text-[#82614A] transition">
             Contact
           </Link>
@@ -93,6 +96,13 @@ export function Navbar() {
               onClick={() => setMobileMenuOpen(false)}
             >
               About
+            </Link>
+            <Link
+              href="/faq"
+              className="font-heading text-[#1A1410] hover:text-[#82614A] py-2"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              FAQ
             </Link>
             <Link
               href="/contact"
