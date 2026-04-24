@@ -18,10 +18,10 @@ const faqs = [
   {
     question: "Do I need grip socks?",
     answer:
-      "Yes! Grip socks are required for all classes for safety and hygiene. If you don't have a pair, they're available for purchase at the studio.",
+      "Yes! Grip socks are required for all classes for safety and hygiene. If you don&apos;t have a pair, they&apos;re available for purchase at the studio.",
   },
   {
-    question: "I'm new where should I start?",
+    question: "I&apos;m new where should I start?",
     answer:
       "We recommend starting with our Form & Align or Tone & Core classes, which are perfect for beginners. Our instructors will guide you through everything so you feel comfortable and confident from your very first class.",
   },
@@ -43,7 +43,7 @@ const faqs = [
   {
     question: "How do memberships work?",
     answer:
-      "Our memberships are auto-renewing and designed for consistency. A minimum of 15 days' written notice is required for any cancellations or changes prior to your next billing cycle.",
+      "Our memberships are auto-renewing and designed for consistency. A minimum of 15 days&apos; written notice is required for any cancellations or changes prior to your next billing cycle.",
   },
   {
     question: "Is unlimited truly unlimited?",
@@ -53,7 +53,7 @@ const faqs = [
   {
     question: "How does the waitlist work?",
     answer:
-      "If a class is full, clients can join the waitlist. If a spot becomes available, they'll be automatically added and notified. Standard cancellation policies still apply once they are added to the class.",
+      "If a class is full, clients can join the waitlist. If a spot becomes available, they&apos;ll be automatically added and notified. Standard cancellation policies still apply once they are added to the class.",
   },
   {
     question: "Can instructors change?",
@@ -115,7 +115,7 @@ export default function FAQPage() {
           </div>
           <div className="text-center mt-12">
             <p className="font-heading text-[#A48D78] mb-6">
-              Didn't find what you're looking for?
+              Didn&apos;t find what you&apos;re looking for?
             </p>
             <Link
               href="/contact"
