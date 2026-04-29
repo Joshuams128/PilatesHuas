@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Script from "next/script";
-import { ChevronDown, Tag, Layers, Package } from "lucide-react";
+import { Tag, Layers, Package } from "lucide-react";
 import { useState } from "react";
 
 type Tab = "packages" | "classPacks" | "promotions";
@@ -81,32 +81,8 @@ const promotionalPlans = [
   },
 ];
 
-const faqs = [
-  {
-    question: "What should I wear to class?",
-    answer:
-      "Wear comfortable, form-fitting athletic wear. Grip socks are mandatory and available for purchase at the studio.",
-  },
-  {
-    question: "Do I need to bring anything?",
-    answer:
-      "Just yourself! We provide all equipment including reformers, mats, props, and water. Towels are available upon request.",
-  },
-  {
-    question: "Can I cancel or reschedule my class?",
-    answer:
-      "Yes, you can cancel or reschedule up to 8 hours before your scheduled class time without penalty. Late cancellations may result in class credit loss.",
-  },
-  {
-    question: "How do promotions work?",
-    answer:
-      "Promotional packages are available for a limited time and cannot be combined with other offers unless stated. Promo codes can be entered at checkout on our booking platform.",
-  },
-];
-
 export default function PricingPage() {
   const [activeTab, setActiveTab] = useState<Tab>("promotions");
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   return (
     <div className="w-full">
@@ -434,48 +410,6 @@ export default function PricingPage() {
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <section className="py-20 bg-[#D9D2C6]">
-        <div className="max-w-[1440px] mx-auto px-6">
-          <h2 className="font-heading text-4xl md:text-5xl text-center mb-12 text-[#1A1410]">
-            Frequently Asked Questions
-          </h2>
-          <div className="max-w-3xl mx-auto space-y-4">
-            {faqs.map((faq, index) => (
-              <div key={index} className="bg-white rounded-2xl overflow-hidden">
-                <button
-                  onClick={() => setOpenFaq(openFaq === index ? null : index)}
-                  className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#F5F2EC] transition"
-                >
-                  <span className="font-heading text-xl text-[#1A1410]">
-                    {faq.question}
-                  </span>
-                  <ChevronDown
-                    className={`w-6 h-6 text-[#82614A] transition-transform ${
-                      openFaq === index ? "rotate-180" : ""
-                    }`}
-                  />
-                </button>
-                {openFaq === index && (
-                  <div className="px-8 pb-6">
-                    <p className="font-heading text-[#1A1410] leading-relaxed">
-                      {faq.answer}
-                    </p>
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-          <div className="text-center mt-8">
-            <Link
-              href="/contact"
-              className="font-heading text-[#82614A] hover:text-[#6d5038] transition"
-            >
-              See Full FAQ →
-            </Link>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
