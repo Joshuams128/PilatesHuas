@@ -90,15 +90,15 @@ export default function Home() {
             Flexible packages to match where you are right now.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {/* Card 1 — March Momentum */}
+            {/* Card 1 — The Haus Flow */}
             <div className="bg-white rounded-2xl overflow-hidden border-2 border-[#82614A] flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
               <div className="px-6 py-5 bg-[#82614A]">
                 <div className="flex items-start justify-between gap-2">
                   <div>
-                    <p className="font-heading text-xl text-white leading-tight">March Momentum</p>
-                    <p className="font-heading text-xs text-white/75 mt-0.5">30 Days · March Only</p>
+                    <p className="font-heading text-xl text-white leading-tight">The Haus Flow</p>
+                    <p className="font-heading text-xs text-white/75 mt-0.5">30 Days</p>
                   </div>
-                  <span className="shrink-0 bg-white/20 text-white font-heading text-[10px] px-2 py-0.5 rounded-full whitespace-nowrap">March Special</span>
+                  <span className="shrink-0 bg-white/20 text-white font-heading text-[10px] px-2 py-0.5 rounded-full whitespace-nowrap">Most Popular</span>
                 </div>
               </div>
               <div className="px-6 py-6 flex flex-col flex-1">
@@ -108,10 +108,10 @@ export default function Home() {
                 </div>
                 <div className="mb-4">
                   <p className="font-heading text-3xl text-[#1A1410]">$89</p>
-                  <p className="font-heading text-xs text-[#A48D78]">save $10 vs. Haus Flow</p>
+                  <p className="font-heading text-xs text-[#A48D78]">$22.25 per class</p>
                 </div>
                 <p className="font-heading text-sm text-[#6b6b6b] italic mb-6 leading-snug">
-                  Kick-start your spring movement practice. March only.
+                  Perfect for building consistency. One class per day for 30 days.
                 </p>
                 <Link
                   href="/book-now"
@@ -155,20 +155,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* March Promo Banner */}
-          <div className="mt-10 max-w-4xl mx-auto bg-[#82614A] rounded-2xl p-8 text-center">
-            <h3 className="font-heading text-2xl md:text-3xl text-white mb-4">
-              March Special Offer
-            </h3>
-            <p className="font-heading text-white/90 text-lg mb-2">
-              15% off Class Packs &amp; Monthly Packages
-            </p>
-            <div className="inline-block bg-white/20 px-6 py-3 rounded-full">
-              <p className="font-heading text-white">
-                Use code: <span className="font-bold">MARCHPH</span>
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 

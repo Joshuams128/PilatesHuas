@@ -13,8 +13,8 @@ const packagePlans = [
     duration: "30 Days",
     classes: 4,
     classLabel: "classes · 1 per day",
-    price: "$99",
-    priceSub: "$24.75 per class",
+    price: "$89",
+    priceSub: "$22.25 per class",
     badge: "Most Popular",
   },
   {
@@ -43,8 +43,8 @@ const classPackPlans = [
     duration: "6 Months",
     classes: 10,
     classLabel: "classes per 6 months",
-    price: "$330",
-    priceSub: "$33 per class",
+    price: "$320",
+    priceSub: "$32 per class",
     badge: null,
   },
   {
