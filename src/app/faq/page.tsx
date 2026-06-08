@@ -18,17 +18,17 @@ const faqs = [
   {
     question: "Do I need grip socks?",
     answer:
-      "Yes! Grip socks are required for all classes for safety and hygiene. If you don&apos;t have a pair, they&apos;re available for purchase at the studio.",
+      "Yes! Grip socks are required for all classes for safety and hygiene. If you don't have a pair, they're available for purchase at the studio.",
   },
   {
-    question: "I&apos;m new where should I start?",
+    question: "I'm new, where should I start?",
     answer:
       "We recommend starting with our Form & Align or Tone & Core classes, which are perfect for beginners. Our instructors will guide you through everything so you feel comfortable and confident from your very first class.",
   },
   {
     question: "What is your cancellation and late policy?",
     answer:
-      "We kindly ask that all classes be canceled or rescheduled at least 8 hours in advance. Late cancellations will result in the loss of a class credit, and no-shows will incur a $25 fee. We completely understand that things come up, but this policy allows us to offer spots to other clients and keep our schedule running smoothly.",
+      "We kindly ask that all classes be canceled or rescheduled at least 8 hours prior to the scheduled class time. Cancellations made within 8 hours of the class start time will be considered a late cancellation and will incur a $17 fee. Clients who do not attend a scheduled class without canceling in advance will be considered a no-show and will incur a $25 fee. We understand that unexpected situations may arise; however, this policy helps us accommodate waitlisted clients and ensures our schedule runs smoothly for all members of our community. Thank you for your understanding and cooperation.",
   },
   {
     question: "What happens if I arrive late to class?",
@@ -43,7 +43,7 @@ const faqs = [
   {
     question: "How do memberships work?",
     answer:
-      "Our memberships are auto-renewing and designed for consistency. A minimum of 15 days&apos; written notice is required for any cancellations or changes prior to your next billing cycle.",
+      "Our memberships are auto-renewing and designed for consistency. A minimum of 15 days' written notice is required for any cancellations or changes prior to your next billing cycle.",
   },
   {
     question: "Is unlimited truly unlimited?",
