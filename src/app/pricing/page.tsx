@@ -22,7 +22,7 @@ const packagePlans = [
     duration: "Monthly",
     classes: 30,
     classLabel: "classes per month · 1 per day",
-    price: "$280",
+    price: "$199",
     priceSub: "unlimited access",
     badge: null,
   },

@@ -1,0 +1,27 @@
+[33m34d8d2a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m fixed & updated FAQ page with new terms
+[33m60eedff[m pricing update
+[33mc232b8c[m up
+[33m099a502[m fix
+[33m9a5d9cd[m faq updated
+[33m3b5181d[m updated packages
+[33m9e77668[m up
+[33mdafc0ce[m package pricing fix
+[33mfc47114[m added package purchase page
+[33mb1cb78d[m cateogry buttons fixed
+[33m42c7c63[m font change
+[33m9ed75aa[m added font
+[33m8d33e48[m updated social links and colours
+[33m69cfce7[m updated site + speed insights
+[33md4becbd[m commit
+[33m1bb928f[m updated site
+[33m3d8b548[m up
+[33m981ff14[m test
+[33m5b9762a[m upadted
+[33m9d81293[m updated
+[33ma574936[m updated embed and content
+[33m2721ed7[m test
+[33mf20a30d[m updated site
+[33mdfaefde[m Merge pull request #1 from Joshuams128/copilot/convert-website-to-nextjs
+[33me51e8e6[m[33m ([m[1;31morigin/copilot/convert-website-to-nextjs[m[33m)[m Convert to Next.js 14 with App Router, TypeScript, and Tailwind CSS
+[33m547658d[m Initial plan
+[33m0eb1030[m Initial commit
