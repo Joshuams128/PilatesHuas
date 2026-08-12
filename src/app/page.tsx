@@ -96,7 +96,7 @@ export default function Home() {
                 <div className="flex items-start justify-between gap-2">
                   <div>
                     <p className="font-heading text-xl text-white leading-tight">The Haus Flow</p>
-                    <p className="font-heading text-xs text-white/75 mt-0.5">30 Days</p>
+                    <p className="font-heading text-xs text-white/75 mt-0.5">14 Days</p>
                   </div>
                   <span className="shrink-0 bg-white/20 text-white font-heading text-[10px] px-2 py-0.5 rounded-full whitespace-nowrap">Most Popular</span>
                 </div>
@@ -111,7 +111,7 @@ export default function Home() {
                   <p className="font-heading text-xs text-[#A48D78]">$22.25 per class</p>
                 </div>
                 <p className="font-heading text-sm text-[#6b6b6b] italic mb-6 leading-snug">
-                  Perfect for building consistency. One class per day for 30 days.
+                  Perfect for building consistency. One class per day for 14 days.
                 </p>
                 <Link
                   href="/book-now"
@@ -152,6 +152,19 @@ export default function Home() {
                   Get Started
                 </Link>
               </div>
+            </div>
+          </div>
+
+          {/* Monthly Discount Banner */}
+          <div className="mt-6 max-w-4xl mx-auto bg-[#82614A] rounded-2xl px-8 py-10 text-center">
+            <h3 className="font-heading text-3xl md:text-4xl text-white mb-3">
+              August Special Offer
+            </h3>
+            <p className="font-heading text-lg text-white/90 mb-6">
+              15% off Class Packs &amp; Monthly Packages
+            </p>
+            <div className="inline-block bg-white/20 rounded-full px-6 py-3 font-heading text-white text-sm">
+              Use code: <span className="font-bold">AUGUSTPH</span>
             </div>
           </div>
 
