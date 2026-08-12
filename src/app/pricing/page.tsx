@@ -10,7 +10,7 @@ type Tab = "packages" | "classPacks" | "promotions";
 const packagePlans = [
   {
     name: "The Haus Flow",
-    duration: "30 Days",
+    duration: "14 Days",
     classes: 4,
     classLabel: "classes · 1 per day",
     price: "$89",
