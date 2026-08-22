@@ -72,12 +72,12 @@ export default function RootLayout({
         <Footer />
         <Analytics />
         <SpeedInsights />
-        <link rel="prefetch" href="https://isaac.www.wellnessliving.com/chatbot_v2/?app=6901e7ba9c11fa8f75a16697" />
+        <link rel="prefetch" href="https://cdn.isaac.www.wellnessliving.com/chatbot_v2/?app=6901e7ba9c11fa8f75a16697" />
         <Script
           id="chat-bot"
-          src="https://isaac.www.wellnessliving.com/resources/index.js"
-          data-url="https://isaac.www.wellnessliving.com/chatbot_v2/?app=6901e7ba9c11fa8f75a16697"
-          data-env="https://isaac.www.wellnessliving.com"
+          src="https://cdn.isaac.www.wellnessliving.com/resources/index.js"
+          data-url="https://cdn.isaac.www.wellnessliving.com/chatbot_v2/?app=6901e7ba9c11fa8f75a16697"
+          data-env="https://cdn.isaac.www.wellnessliving.com"
           strategy="afterInteractive"
         />
       </body>
