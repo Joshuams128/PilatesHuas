@@ -60,11 +60,6 @@ const faqs = [
     answer:
       "While we do our best to keep the schedule consistent, instructors may occasionally change. All of our instructors are highly trained, and we encourage clients to experience different teaching styles.",
   },
-  {
-    question: "How do promotions work?",
-    answer:
-      "Promotional packages are available for a limited time and cannot be combined with other offers unless stated. Promo codes can be entered at checkout on our booking platform.",
-  },
 ];
 
 export default function FAQPage() {

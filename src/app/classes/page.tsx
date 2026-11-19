@@ -132,7 +132,7 @@ export default function ClassesPage() {
             Ready to Begin?
           </h2>
           <p className="font-heading text-xl mb-8 text-[#1A1410] max-w-2xl mx-auto">
-            Try our intro offers and discover which class is perfect for you.
+            Try The Haus Intro and discover which class is perfect for you.
           </p>
           <Link
             href="/pricing"

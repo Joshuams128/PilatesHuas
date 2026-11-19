@@ -1,18 +1,14 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { endOfMonthLabel } from "@/lib/dates";
 
 function BookNow() {
   const introOffers = [
     {
-      name: "1 Week Unlimited",
-      price: "$89",
-      description: "Unlimited classes for 7 days",
-    },
-    {
-      name: "Intro Offer",
+      name: "The Haus Intro",
       price: "$40",
-      description: "2 visits, valid 10 days",
+      description: `2 visits, valid 10 days · Available until ${endOfMonthLabel()}`,
     },
   ];
 
@@ -36,7 +32,7 @@ function BookNow() {
           <h2 className="font-heading text-2xl text-center mb-8 text-[#1A1410]">
             New to Pilates Haus?
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 gap-6 max-w-sm mx-auto">
             {introOffers.map((offer, index) => (
               <div
                 key={index}
