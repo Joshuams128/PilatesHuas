@@ -2,20 +2,22 @@
 
 import Link from "next/link";
 import Script from "next/script";
-import { Tag, Layers, Package } from "lucide-react";
+import { Layers, Package } from "lucide-react";
 import { useState } from "react";
+import { endOfMonthLabel } from "@/lib/dates";
 
-type Tab = "packages" | "classPacks" | "promotions";
+type Tab = "packages" | "classPacks";
 
 const packagePlans = [
   {
-    name: "The Haus Flow",
-    duration: "14 Days",
-    classes: 4,
+    name: "The Haus Intro",
+    duration: "10 Days",
+    classes: 2,
     classLabel: "classes · 1 per day",
-    price: "$89",
-    priceSub: "$22.25 per class",
-    badge: "Most Popular",
+    price: "$40",
+    priceSub: "introductory rate",
+    badge: "New Clients Only",
+    limited: true,
   },
   {
     name: "The Haus Unlimited",
@@ -25,6 +27,17 @@ const packagePlans = [
     price: "$199",
     priceSub: "unlimited access",
     badge: null,
+    limited: true,
+  },
+  {
+    name: "The Haus Flow",
+    duration: "14 Days",
+    classes: 4,
+    classLabel: "classes · 1 per day",
+    price: "$89",
+    priceSub: "$22.25 per class",
+    badge: "Most Popular",
+    limited: false,
   },
 ];
 
@@ -67,22 +80,8 @@ const classPackPlans = [
   },
 ];
 
-const promotionalPlans = [
-  {
-    name: "Intro Offer",
-    duration: "10 Days",
-    classes: 2,
-    classLabel: "classes · 1 per day",
-    price: "$40",
-    priceSub: "introductory rate",
-    badge: "New Clients Only",
-    highlight: "Try Pilates Haus risk-free. Perfect first step.",
-    expires: null,
-  },
-];
-
 export default function PricingPage() {
-  const [activeTab, setActiveTab] = useState<Tab>("promotions");
+  const [activeTab, setActiveTab] = useState<Tab>("packages");
 
   return (
     <div className="w-full">
@@ -106,19 +105,6 @@ export default function PricingPage() {
           {/* Toggle Buttons */}
           <div className="flex justify-center mb-14 px-4">
             <div className="inline-flex rounded-full p-1 gap-1 sm:gap-2 bg-[#E8E2D8] shadow-inner flex-wrap sm:flex-nowrap">
-              <button
-                onClick={() => setActiveTab("promotions")}
-                className={`flex items-center gap-1.5 sm:gap-2.5 px-3 sm:px-7 py-2 sm:py-3 text-xs sm:text-base rounded-full font-heading transition-all duration-300 whitespace-nowrap ${
-                  activeTab === "promotions"
-                    ? "text-white shadow-md"
-                    : "text-[#6b6b6b] hover:text-[#1A1410]"
-                }`}
-                style={activeTab === "promotions" ? { backgroundColor: "#A48D78" } : {}}
-              >
-                <Tag className="w-3 h-3 sm:w-4 sm:h-4" />
-                <span className="hidden sm:inline">Current Promotions</span>
-                <span className="sm:hidden">Promotions</span>
-              </button>
               <button
                 onClick={() => setActiveTab("packages")}
                 className={`flex items-center gap-1.5 sm:gap-2.5 px-3 sm:px-7 py-2 sm:py-3 text-xs sm:text-base rounded-full font-heading transition-all duration-300 whitespace-nowrap ${
@@ -148,105 +134,6 @@ export default function PricingPage() {
             </div>
           </div>
 
-          {/* ── PROMOTIONS ── */}
-          {activeTab === "promotions" && (
-            <div>
-              <div className="text-center mb-10">
-                <div className="inline-block px-4 py-1 rounded-full mb-4 font-heading text-white text-sm bg-[#A48D78]">
-                  Current Promotions
-                </div>
-                <h2 className="font-heading text-4xl md:text-5xl text-[#1A1410] mb-3">
-                  Limited-Time Offers
-                </h2>
-                <p className="font-heading text-lg text-[#A48D78] italic max-w-xl mx-auto">
-                  Exclusive deals for new clients and the month of April.
-                </p>
-              </div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                {promotionalPlans.map((promo, index) => (
-                  <div
-                    key={index}
-                    className="relative bg-white rounded-2xl overflow-hidden flex flex-col transition-all duration-300 hover:shadow-xl hover:-translate-y-1 border-2 border-[#82614A]"
-                  >
-                    <div className="px-5 py-4 bg-[#82614A]">
-                      <div className="flex items-start justify-between gap-2">
-                        <div>
-                          <p className="font-heading text-lg leading-tight text-white">
-                            {promo.name}
-                          </p>
-                          <p className="font-heading text-base font-semibold mt-1 text-white">
-                            {promo.duration}
-                          </p>
-                        </div>
-                        {promo.badge && (
-                          <span className="shrink-0 bg-white/20 text-white font-heading text-xs px-3 py-1 rounded-full whitespace-nowrap font-semibold">
-                            {promo.badge}
-                          </span>
-                        )}
-                      </div>
-                    </div>
-
-                    <div className="px-5 py-5 flex flex-col flex-1">
-                      {promo.classes !== null && (
-                        <div className="mb-4 pb-4 border-b border-[#EDE7DF]">
-                          <span className="font-heading text-4xl text-[#82614A]">
-                            {promo.classes}
-                          </span>
-                          <p className="font-heading text-xs text-[#9b9b9b] uppercase tracking-wide mt-0.5">
-                            {promo.classLabel}
-                          </p>
-                        </div>
-                      )}
-
-                      {promo.classes === null && (
-                        <div className="mb-4 pb-4 border-b border-[#EDE7DF]">
-                          <p className="font-heading text-xs text-[#9b9b9b] uppercase tracking-wide">
-                            {promo.classLabel}
-                          </p>
-                        </div>
-                      )}
-
-                      <div className="mb-3">
-                        <p className="font-heading text-3xl text-[#1A1410]">
-                          {promo.price}
-                        </p>
-                        <p className="font-heading text-xs text-[#A48D78]">
-                          {promo.priceSub}
-                        </p>
-                      </div>
-
-                      <p className="font-heading text-sm text-[#6b6b6b] italic mb-4 leading-snug">
-                        {promo.highlight}
-                      </p>
-
-                      {promo.expires && (
-                        <p className="font-heading text-[11px] mb-4 text-[#82614A]">
-                          ⏳ {promo.expires}
-                        </p>
-                      )}
-
-                      <button
-                          onClick={() => document.getElementById('packages-store')?.scrollIntoView({ behavior: 'smooth' })}
-                          className="mt-auto block w-full py-2.5 rounded-full font-heading text-sm text-center text-white bg-[#82614A] hover:bg-[#6d5038] transition"
-                        >
-                          Claim Offer
-                        </button>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              <p className="font-heading text-center text-[#A48D78] mt-8 text-sm">
-                Promotions are subject to availability and cannot be combined unless stated.{" "}
-                <a href="mailto:info@pilateshaus.ca" className="underline hover:text-[#82614A]">
-                  info@pilateshaus.ca
-                </a>
-              </p>
-
-            </div>
-          )}
-
           {/* ── PACKAGES ── */}
           {activeTab === "packages" && (
             <div>
@@ -262,7 +149,7 @@ export default function PricingPage() {
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5">
                 {packagePlans.map((plan, index) => (
                   <div
                     key={index}
@@ -304,6 +191,12 @@ export default function PricingPage() {
                           {plan.priceSub}
                         </p>
                       </div>
+
+                      {plan.limited && (
+                        <p className="font-heading text-[11px] mb-4 text-[#82614A]">
+                          ⏳ Available until {endOfMonthLabel()}
+                        </p>
+                      )}
 
                       <Link
                         href="/book-now"
