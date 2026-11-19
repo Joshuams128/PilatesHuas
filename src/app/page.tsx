@@ -90,7 +90,7 @@ export default function Home() {
           <p className="font-heading text-lg text-center italic text-[#A48D78] mb-12">
             Flexible packages to match where you are right now.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {/* Card 1 — The Haus Flow */}
             <div className="bg-white rounded-2xl overflow-hidden border-2 border-[#82614A] flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
               <div className="px-6 py-5 bg-[#82614A]">
@@ -145,6 +145,40 @@ export default function Home() {
                 </div>
                 <p className="font-heading text-sm text-[#6b6b6b] italic mb-2 leading-snug">
                   Try Pilates Haus risk-free. The perfect first step.
+                </p>
+                <p className="font-heading text-[11px] mb-6 text-[#82614A]">
+                  ⏳ Available until {endOfMonthLabel()}
+                </p>
+                <Link
+                  href="/book-now"
+                  className="mt-auto block w-full py-3 rounded-full font-heading text-sm text-center text-white bg-[#82614A] hover:bg-[#6d5038] transition"
+                >
+                  Get Started
+                </Link>
+              </div>
+            </div>
+
+            {/* Card 3 — The Haus Unlimited */}
+            <div className="bg-white rounded-2xl overflow-hidden border-2 border-[#82614A] flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+              <div className="px-6 py-5 bg-[#82614A]">
+                <div className="flex items-start justify-between gap-2">
+                  <div>
+                    <p className="font-heading text-xl text-white leading-tight">The Haus Unlimited</p>
+                    <p className="font-heading text-xs text-white/75 mt-0.5">Monthly</p>
+                  </div>
+                </div>
+              </div>
+              <div className="px-6 py-6 flex flex-col flex-1">
+                <div className="mb-4 pb-4 border-b border-[#EDE7DF]">
+                  <span className="font-heading text-4xl text-[#82614A]">30</span>
+                  <p className="font-heading text-xs text-[#9b9b9b] uppercase tracking-wide mt-0.5">classes per month · 1 per day</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-heading text-3xl text-[#1A1410]">$199</p>
+                  <p className="font-heading text-xs text-[#A48D78]">unlimited access</p>
+                </div>
+                <p className="font-heading text-sm text-[#6b6b6b] italic mb-2 leading-snug">
+                  Move as often as you like. One class per day all month.
                 </p>
                 <p className="font-heading text-[11px] mb-6 text-[#82614A]">
                   ⏳ Available until {endOfMonthLabel()}
